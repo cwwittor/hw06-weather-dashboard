@@ -6,6 +6,7 @@ Had to go over the alloted time due to unforseen family circumstances that requi
 
 The point I struggled with most for the project was initially having too much in the same function as well as some of the html/css stuff due to front end still being a little foreign to me. Unsure if I used conventional means but am happy with my results this hw assignment.
 
+One thing I am very proud of is how I was able to do the part of the assignment where I create the 5 day schedule without having to use static elements on the page, and by that I had used less lines in my HTML section.
 
 https://cwwittor.github.io/hw05-WorkScheduler/
 
