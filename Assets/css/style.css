@@ -1,0 +1,141 @@
+#search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#search button:hover {
+    background: #0b7dda;
+}
+
+#search button {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+#search input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.weather-dashboard  {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.city-search {
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+#search-for-city-text {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.list-of-cities {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.city-in-list {
+
+}
+
+.col-md-3  {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.col-md-9  {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.weather-side {
+    float:right;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.city-info {
+    border: 1px solid rgb(190, 190, 190);
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.city-name  {
+    padding-bottom: 25px;
+    display: inline;
+    white-space: nowrap;
+}
+
+.five-day-forecast-text {
+    padding-top: 20px;
+}
+
+.five-day-block {
+    background-color:rgb(87, 87, 207);
+    text-align: center;
+    color: white;
+    float:left;
+    border-radius: 15px;    
+    width: 230px;
+    height: 300px;
+    border: 10px solid white;
+    margin: 10px 0px 10px 0px;
+}
+
+.five-day-block h5  {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.five-day-block {
+    font-size:20px;
+}
+
+#img-of-weather {
+    float:left;
+    display: inline;
+    white-space: nowrap;
+    width: 20px;
+    height: 20px;
+}
+
+.uv-low {
+    display: inline;
+    background-color: rgb(54, 255, 47);
+}
+
+.uv-moderate {
+    display: inline;
+    background-color: yellow;
+}
+
+.uv-high {
+    display: inline;
+    background-color: red;
+}
+

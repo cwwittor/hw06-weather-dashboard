@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+
+    <div class= "weather-dashboard col-md-12">
+      <h1 id="weather-header">Weather Dashboard</h1>
+    </div>
+
+
+
+    <div class= "city-search col-md-3">
+      <h4 id= "search-for-city-text">Search for a City:</h4>
+      <form id="search" style="margin:none;max-width:300px">
+        <input id= "search-city" type="text" placeholder="Search.." name="search2"/>
+        <button id= "city-button" type="button"><i class="fa fa-search"></i></button>
+      </form>
+      <ul id= "unordered-list-cities" class= "list-of-cities">
+      </ul>
+    </div>
+
+    <div class= "weather-side col-md-9">
+      <div class= "city-info">
+        <h2 class= "city-name">City Name</h2>
+        <img class="image-of-weather">
+        <div class= "city-elements">
+          <p class= "temperature">Temperature:</p>
+          <p class= "humidity">Humidity:</p>
+          <p class= "wind-speed">Wind Speed:</p>
+          <p id= "uv-index">UV Index:</p>
+        </div>
+      </div>
+      <div id= "five-day-append" class= "five-day-forecast">
+        <h3 class= "five-day-forecast-text">Five Day Forecast:</h3>
+      </div>
+    </div>
+
+
+
+
+
+  
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="script.js"></script>
+
+
+
+  </body>
