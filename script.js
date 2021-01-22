@@ -14,7 +14,7 @@ function startUp(){
         cityName = "raleigh";
     }
     cityName = localStorage.getItem('starter-city');
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
+    queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
 
     updateForecast(); 
     fiveDaySchedule();
@@ -24,7 +24,7 @@ function startUp(){
 $("#city-button").on("click", function() {
     
     cityName = $("#search-city").val();
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
+    queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
 
     updateForecast(); 
     fiveDaySchedule();
@@ -37,7 +37,7 @@ $("ul").on("click", "li", function() {
 
     cityName = $(this).text();
     console.log(this);
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
+    queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + api_key;
 
     updateForecast();
     fiveDaySchedule();
@@ -92,7 +92,7 @@ function updateForecast () {
         $(".wind-speed").append("Wind Speed: " + windSpd + " MPH");
 
         //building url for second api
-        var queryURLuV = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lati + "&lon=" + long + "&appid=752b41def39260e71140c4018e9a0f11"
+        var queryURLuV = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lati + "&lon=" + long + "&appid=752b41def39260e71140c4018e9a0f11"
 
         $.ajax({
             url: queryURLuV,
@@ -133,7 +133,7 @@ function updateForecast () {
             $(".city-name").empty();
             $(".city-name").append(fullNameTitle);
 
-            var imgText = "http://openweathermap.org/img/wn/" +imgOfIcon + "@2x.png";
+            var imgText = "https://openweathermap.org/img/wn/" +imgOfIcon + "@2x.png";
 
             $(".image-of-weather").attr("src", imgText);
 
@@ -149,7 +149,7 @@ function updateForecast () {
 
 //function for building the 5 day schedule using a seperate api that had to be iterated through due to it being every 3 hours
 function fiveDaySchedule () {
-    var urlFiveDay = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=" + api_key;
+    var urlFiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=" + api_key;
     $.ajax({
         url: urlFiveDay,
         method: "GET"
@@ -192,7 +192,7 @@ function fiveDaySchedule () {
             newIcon.classList += "weather-icon";
             newIcon.id = "weather-icon" + i;
             document.getElementById(newDiv.id).appendChild(newIcon);
-            $("#"+newIcon.id).attr("src", "http://openweathermap.org/img/wn/" +imgOfIcon + "@2x.png");
+            $("#"+newIcon.id).attr("src", "https://openweathermap.org/img/wn/" +imgOfIcon + "@2x.png");
 
             var newTemp = document.createElement("p");
             newTemp.classList += "temp-block";
