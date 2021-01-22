@@ -8,6 +8,6 @@ The point I struggled with most for the project was initially having too much in
 
 One thing I am very proud of is how I was able to do the part of the assignment where I create the 5 day schedule without having to use static elements on the page, and by that I had used less lines in my HTML section.
 
-https://cwwittor.github.io/hw05-WorkScheduler/
+https://cwwittor.github.io/hw06-weather-dashboard/
 
-![image](https://i.imgur.com/ErgCgL4.png)
+![image](https://i.imgur.com/JF66fG7.png)
